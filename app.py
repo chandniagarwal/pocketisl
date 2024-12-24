@@ -8,7 +8,7 @@ data = pd.read_csv('Anuprayaas.csv')  # Replace with your actual CSV file name
 st.title("Video Search Interface")
 
 # Search bar
-query = st.text_input("Search for a word:")
+query = st.text_input("Search for a word:").lower()
 
 # Display results
 if query:
